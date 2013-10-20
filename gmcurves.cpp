@@ -695,7 +695,7 @@ void init()
 	glBufferSubData(GL_ARRAY_BUFFER, sizeOfAxis + sizeOfControlPoints + sizeOfControlLines + sizeOfBernsteinLines + sizeOfQuadLines + sizeOfCubicLines, sizeOfFourSchemeLines, fourSchemeLines);
 
     // Load shaders and use the resulting shader program
-    GLuint program = InitShader("vshader_lab2.glsl", "fshader_lab2.glsl");
+    GLuint program = InitShader("vshader.glsl", "fshader.glsl");
     glUseProgram(program);
 
 	vColorID = glGetUniformLocation(program, "vColor");
